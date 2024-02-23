@@ -1,0 +1,21 @@
+<p>
+  <strong>Olá, John Doe</strong>
+  <br />
+  Ag: 9999, CO: 99999-9
+</p>
+
+<p>
+  Poupaça: R$ <span id="get-poupanca">{{ getPoupanca }}</span>
+  <br />
+  <input id="input-sacar" type="text" #sacar />
+  <button id="sacar" (click)="setSacar(sacar.value)">Click</button>
+</p>
+
+<p>
+  Cateira: R$ <span id="get-carteira">{{ getCarteira }}</span>
+  <br />
+  <input id="input-depositar" type="text" #depositar />
+  <button id="depositar" (click)="setDepositar(depositar.value)">Click</button>
+</p>
+
+<app-list></app-list>
